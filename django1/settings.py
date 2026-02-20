@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-qs0o85cueeqix9_szjxb2nuav-k8rrjg0^+(io_z1me-*10f)l
 # DEBUG com valor True = modo de desenvolvimento
 # DEBUG com valor False = modo de produção
  
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
